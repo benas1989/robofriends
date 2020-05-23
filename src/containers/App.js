@@ -52,7 +52,7 @@ class App extends Component
         let filtered = robots.filter(robot => robot.name.toLowerCase().includes(searchfield.toLowerCase()));
         return (
             <div className='tc'>
-                <h1>RoboFriends</h1>
+                <h1>RoboFriends X</h1>
                 <SearchBox searchChange={this.onSearchChange}/>
                 <Scroll>
                     {
