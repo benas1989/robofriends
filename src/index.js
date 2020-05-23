@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import App from './containers/App';
+import ErrorBoundary from './containers/ErrorBoundary'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+<Fragment>
+  <ErrorBoundary>
+    <App/>
+  </ErrorBoundary> 
+</Fragment>,
   document.getElementById('root')
 );
 
