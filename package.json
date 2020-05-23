@@ -19,7 +19,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "update": "react-scripts build && gh-pages -d build && react-scripts build && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
